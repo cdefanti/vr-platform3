@@ -1,0 +1,57 @@
+Base path: C:/Program Files/Unity/Editor/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-9588
+Cmd: getPlatforms
+Cmd: preprocess
+  insize=893 outsize=435 ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=759 outsize=428 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=759 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=763 outsize=460 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=763 outsize=6 kw= ok=1
+Cmd: preprocess
+  insize=837 outsize=431 ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=707 outsize=309 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=707 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=711 outsize=365 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=711 outsize=6 kw= ok=1
+Cmd: preprocess
+  insize=441 outsize=261 ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=482 outsize=174 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=482 outsize=6 kw= ok=1
+Cmd: preprocess
+  insize=207 outsize=204 ok=1
+Cmd: preprocess
+  insize=912 outsize=507 ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=704 outsize=309 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=704 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=711 outsize=341 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=711 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=990 outsize=463 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=990 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=751 outsize=1893 kw=SHADOWS_DEPTH ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=751 outsize=6 kw=SHADOWS_DEPTH ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=982 outsize=9902 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=982 outsize=6 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=938 outsize=6059 kw=POINT SHADOWS_OFF ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=938 outsize=6 kw=POINT SHADOWS_OFF ok=1
