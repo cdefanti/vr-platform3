@@ -160,12 +160,11 @@ namespace AssemblyCSharp
 				//Debug.Log("RECV");
 				nPackets++;
 				newPacketBufferMS.Position = 0;
-
+				//Debug.Log ("Deserializing data...");
 				update_protocol_v3.Update update = Serializer.Deserialize<update_protocol_v3.Update>(new MemoryStream(newPacketBuffer, 0, nBytesReceived));
-				//Debug.Log ("received update of type " + update.id);
+				//Debug.Log ("Data deserialized. Received update of type " + update.label);
 
 				newPacketFrame = update.mod_version;
-
 				if(newPacketFrame > lastLoadedFrame) {
 					// Swap the buffers and reset the positions.
 					lastLoadedBufferMS.Position = 0;
@@ -180,7 +179,7 @@ namespace AssemblyCSharp
 
 
 
-				for (int j = 0; j < update.live_objects.Count; j++) {
+					for (int j = 0; j < update.live_objects.Count; j++) {
 						LiveObject or = update.live_objects[j];
 						string label = or.label;
 						LiveObjectStorage ow;
@@ -198,14 +197,13 @@ namespace AssemblyCSharp
 								ow.pos = new Vector3((float)or.x, (float)or.y, (float)or.z);
 								ow.rot = new Quaternion((float)or.qx, (float)or.qy, (float)or.qz, (float)or.qw);
 							}
-							Debug.Log (label + " positon: " + ow.pos);
-							Debug.Log (label + " rotation: " + ow.rot);
 							if (or.button_bits > 0) {
 								ow.button_bits = or.button_bits;
 							}
 						}
 					}
 				}
+
 				if (stopReceive) {
 					break;
 				}

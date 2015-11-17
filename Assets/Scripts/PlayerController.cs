@@ -24,9 +24,10 @@ namespace AssemblyCSharp
 
 
 			Quaternion oldOrientation = this.transform.rotation;
-			hmd_rotation = UnityEngine.VR.InputTracking.GetLocalRotation (UnityEngine.VR.VRNode.CenterEye);
+			hmd_rotation = UnityEngine.VR.InputTracking.GetLocalRotation (UnityEngine.VR.VRNode.Head);
+			float d = Quaternion.Angle (cam_rotation, hmd_rotation * oldOrientation) / 90f;
 			//hmd_rotation = OVRManager.display.GetHeadPose(0).orientation;
-			this.transform.rotation = Quaternion.Slerp(oldOrientation, cam_rotation * Quaternion.Inverse(hmd_rotation), Time.deltaTime);
+			this.transform.rotation = Quaternion.Slerp(oldOrientation, cam_rotation * Quaternion.Inverse(hmd_rotation), d * Time.deltaTime);
 			//OVRManager.display.RecenterPose();
 
 
