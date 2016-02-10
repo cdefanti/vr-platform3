@@ -55,6 +55,7 @@
      <None Include="Assets\SteamVR\Resources\SteamVR_BlitFlip.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_HiddenArea.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Overlay.shader" />
+     <None Include="Assets\shaders\lightingModel.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Blit.shader" />
      <None Include="Assets\SteamVR\readme.txt" />
